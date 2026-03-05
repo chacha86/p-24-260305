@@ -11,11 +11,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequiredArgsConstructor
 public class PostController {
 
-<<<<<<< HEAD
-=======
     private final PostService postService;
 
->>>>>>> 8b19647 (5)
     @GetMapping("/posts/write-form")
     @ResponseBody
     public String writeForm() {
