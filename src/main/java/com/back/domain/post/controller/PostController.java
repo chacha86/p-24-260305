@@ -18,7 +18,7 @@ public class PostController {
     public String writeForm() {
 
         return """
-                <form action="/posts/write">
+                <form method="post" action="/posts/write">
                   <input type="text" name="title">
                   <br>
                   <textarea name="content"></textarea>
@@ -28,7 +28,7 @@ public class PostController {
                 """;
     }
 
-    @GetMapping("/posts/write")
+    @PostMapping("/posts/write")
     @ResponseBody
     public String write(String title, String content) {
 
